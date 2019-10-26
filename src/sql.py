@@ -6,10 +6,10 @@ class sql:
     def connect_database():
         global cursor
         global connection
-        connection = pymysql.connect(host='rnd.vqbn.com',
+        connection = pymysql.connect(host='userName',
                                      user='root',
-                                     password='19900206',
-                                     db='fdns_logs',
+                                     password='pa$$word',
+                                     db='log_db',
                                      charset='utf8mb4',
                                      cursorclass=pymysql.cursors.DictCursor)
         cursor = connection.cursor()
